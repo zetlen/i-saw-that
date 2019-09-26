@@ -1,6 +1,6 @@
 {
   "name": "i-saw-that",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "someone did an oopsie on npm and you saw that",
   "main": "index.js",
   "bin": "bin/i-saw-that",
