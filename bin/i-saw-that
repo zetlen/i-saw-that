@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+const iSawThat = require('..'),
+  chalk = require('chalk'),
+  cli = require('meow')(`
+    Usage
+      $ i-saw-that [@scope/]<package-name>
+    
+    Examples
+      $ i-saw-that react
+        
+`);
+
+const [pkgName] = cli.input;
+
+if (!pkgName) {
+  console.error(chalk`Must provide a package name, e.g. { whiteBright i-saw-that react-dom }`)
+}
+
+console.log(iSawThat(pkgName));

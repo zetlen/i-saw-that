@@ -1,0 +1,25 @@
+{
+  "name": "i-saw-that",
+  "version": "1.0.0",
+  "description": "someone did an oopsie on npm and you saw that",
+  "main": "index.js",
+  "bin": "bin/i-saw-that",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "dependency",
+    "check"
+  ],
+  "repository": "github:zetlen/i-saw-that",
+  "author": "zetlen@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "columnify": "^1.5.4",
+    "meow": "^5.0.0",
+    "moment": "^2.24.0"
+  }
+}
