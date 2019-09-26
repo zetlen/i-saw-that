@@ -14,7 +14,9 @@ const iSawThat = require('..'),
 const [pkgName] = cli.input;
 
 if (!pkgName) {
-  console.error(chalk`Must provide a package name, e.g. { whiteBright i-saw-that react-dom }`)
+  console.error(`Must provide a package name, e.g.
+  ${chalk.bold.whiteBright('i-saw-that ') + chalk.bold.underline.whiteBright('react-dom')}`)
+  process.exit(1);
 }
 
 console.log(iSawThat(pkgName));
